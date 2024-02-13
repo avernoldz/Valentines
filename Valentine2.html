@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YESSSS!!!</title>
+    <link rel="icon" type="image/x-icon" href="faviconh.ico" />
+    <style>
+      body {
+        background-image: url("bg.png");
+      }
+      .div1 {
+        margin: auto;
+        padding: 10px;
+        font-family: "Coolvetica";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .div1 p {
+        color: rgb(252, 94, 121);
+        text-align: center;
+        padding: 10px;
+        border: 3px solid pink;
+        border-radius: 5px;
+        background-color: white;
+        width: 250px;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: 0.15em solid rgb(221, 87, 109); /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: 0.15em; /* Adjust as needed */
+        animation: typing 3.5s steps(30, end),
+          blink-caret 0.5s step-end infinite;
+      }
+
+      /* The typing effect */
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 250px;
+        }
+      }
+
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: rgb(255, 138, 158);
+        }
+      }
+
+      @keyframes blink {
+        50% {
+          border: 2px solid rgb(167, 2, 29);
+        }
+      }
+      a:first-child {
+        /*or other element you want*/
+        animation: blink 0.5s step-end infinite alternate;
+      }
+
+      .div2 {
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .div3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Barbie";
+        flex-direction: column;
+      }
+      .div3 a:first-child {
+        padding: 5px 20px;
+        background-color: rgb(252, 94, 121);
+        color: white;
+        border-radius: 5px;
+        font-size: larger;
+        cursor: url("yes.gif"), url("favicon.ico"), auto;
+        text-decoration: none;
+        border: 2px solid rgb(252, 94, 121);
+      }
+      .div3 a:first-child:hover {
+        background-color: red;
+        transition: 2s;
+      }
+      .div5 {
+        display: flex;
+        justify-content: flex-end;
+        rotate: 120;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div5">
+      <img src="gif.gif" alt="gif" width="150px" />
+    </div>
+    <div class="div1">
+      <p>YESSS!!!!!!!!!!!!</p>
+    </div>
+    <div class="div2">
+      <img src="yes.gif" alt="gif" width="250px" />
+      <img src="yes2.gif" alt="gif" width="250px" />
+    </div>
+    <br />
+    <div class="div3">
+      <a href="Valentine3.html"
+        >PICK PLACE
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="15"
+          width="14"
+          viewBox="0 0 448 512"
+        >
+          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            fill="white"
+            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+          />
+        </svg>
+      </a>
+
+      <br />
+    </div>
+  </body>
+</html>

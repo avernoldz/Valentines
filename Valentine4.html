@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEE YOUUU!!</title>
+    <link rel="icon" type="image/x-icon" href="faviconh.ico" />
+    <style>
+      body {
+        background-image: url("bg.png");
+        font-family: "Coolvetica";
+      }
+      .div1 {
+        padding: 10px;
+        font-family: "Coolvetica";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .div1 p {
+        color: rgb(252, 94, 121);
+        padding: 10px;
+        border: 3px solid pink;
+        border-radius: 5px;
+        background-color: white;
+        width: 210px;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        white-space: nowrap; /* Keeps the content on a single line */
+        letter-spacing: 0.15em; /* Adjust as needed */
+        animation: typing 3.5s steps(30, end),
+          blink-caret 0.5s step-end infinite;
+      }
+
+      /* The typing effect */
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 210px;
+        }
+      }
+
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: rgb(255, 138, 158);
+        }
+      }
+
+      .div2 {
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .div2 img {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+      }
+      .div5 {
+        display: flex;
+        justify-content: flex-end;
+        rotate: 120;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div5">
+      <img src="gif.gif" alt="gif" width="150px" />
+    </div>
+    <div class="div1">
+      <p>SEE YOUU!!!</p>
+    </div>
+    <div class="div2">
+      <img src="flower.gif" alt="kape" width="250px" />
+      <img src="shy.gif" alt="kape" width="250px" />
+    </div>
+  </body>
+</html>

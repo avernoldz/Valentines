@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="icon" type="image/x-icon" href="faviconh.ico" />
+    <style>
+      body {
+        background-image: url("bg.png");
+        font-family: "Coolvetica";
+      }
+      .div1 {
+        padding: 10px;
+        font-family: "Coolvetica";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .div1 p {
+        color: rgb(252, 94, 121);
+        padding: 10px;
+        border: 3px solid pink;
+        border-radius: 5px;
+        background-color: white;
+        width: 210px;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        white-space: nowrap; /* Keeps the content on a single line */
+        letter-spacing: 0.15em; /* Adjust as needed */
+        animation: typing 3.5s steps(30, end),
+          blink-caret 0.5s step-end infinite;
+      }
+
+      /* The typing effect */
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 210px;
+        }
+      }
+
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: rgb(255, 138, 158);
+        }
+      }
+
+      @keyframes blink {
+        50% {
+          border: 2px solid rgb(167, 2, 29);
+        }
+      }
+      a:first-child {
+        /*or other element you want*/
+        animation: blink 0.5s step-end infinite alternate;
+      }
+
+      .div2 {
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .div2 img {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+      }
+      .div3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Barbie";
+        flex-direction: column;
+      }
+      .div3 a:first-child {
+        padding: 5px 20px;
+        background-color: rgb(252, 94, 121);
+        color: white;
+        border-radius: 5px;
+        font-size: larger;
+        cursor: url("yes.gif"), url("favicon.ico"), auto;
+        text-decoration: none;
+        border: 2px solid rgb(252, 94, 121);
+      }
+      .div3 a:first-child:hover {
+        background-color: red;
+        transition: 2s;
+      }
+      .div5 {
+        display: flex;
+        justify-content: flex-end;
+        rotate: 120;
+      }
+      .container {
+        height: 400px;
+        width: 250px;
+        background-color: rgb(255, 91, 118);
+        border-radius: 5px;
+        color: white;
+      }
+      .container label {
+        margin-left: 20px;
+        letter-spacing: 1px;
+      }
+      .container label:last-child {
+        font-size: 14px;
+      }
+      .label {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div5">
+      <img src="gif.gif" alt="gif" width="150px" />
+    </div>
+    <div class="div1">
+      <p>Where shoud we date?</p>
+    </div>
+    <div class="div2">
+      <div class="container">
+        <img src="2.jpg" alt="kape" width="250px" />
+        <br />
+        <div class="label">
+          <label>Rides kung saan</label>
+          <br />
+          <label>Anywhere</label>
+        </div>
+      </div>
+      <div class="container">
+        <img src="kape.jpg" alt="kape" width="250px" />
+        <br />
+        <div class="label">
+          <label>Kape Sinukuan</label>
+          <br />
+          <label>Arayat Pampanga</label>
+        </div>
+      </div>
+      <div class="container">
+        <img src="3.jpg" alt="kape" width="250px" />
+        <br />
+        <div class="label">
+          <label>Skyranch Pampanga</label>
+          <br />
+          <label>San Fernando Pampanga</label>
+        </div>
+      </div>
+      <div class="container">
+        <img src="4.jpg" alt="kape" width="250px" />
+        <br />
+        <div class="label">
+          <label>Beach/Ilog</label>
+          <br />
+          <label>Dingalan</label>
+        </div>
+      </div>
+      <div class="container">
+        <img src="5.jpg" alt="kape" width="250px" />
+        <br />
+        <div class="label">
+          <label>Unli Wings</label>
+          <br />
+          <label>Anywhere in the planet</label>
+        </div>
+      </div>
+      <div class="container">
+        <img src="6.jpg" alt="kape" width="250px" />
+        <br />
+        <div class="label">
+          <label>Samgyup!!</label>
+          <br />
+          <label>Cabanatuan or Pampanga</label>
+        </div>
+      </div>
+      <div class="container">
+        <img src="7.jpg" alt="kape" width="250px" />
+        <br />
+        <div class="label">
+          <label>SOGO HAHAHA </label>
+          <br />
+          <label>Langit</label>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="div3">
+      <a href="Valentine4.html"
+        >NEXT
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="15"
+          width="14"
+          viewBox="0 0 448 512"
+        >
+          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            fill="white"
+            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+          />
+        </svg>
+      </a>
+
+      <br />
+    </div>
+  </body>
+</html>

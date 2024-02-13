@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Will you be my valentine?</title>
+    <link rel="icon" type="image/x-icon" href="faviconh.ico" />
+    <style>
+      body {
+        background-image: url("bg.png");
+      }
+      .div1 {
+        margin: auto;
+        padding: 10px;
+        font-family: "Coolvetica";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+      }
+      .div1 p {
+        color: rgb(252, 94, 121);
+        text-align: center;
+        padding: 10px;
+        border: 3px solid pink;
+        border-radius: 5px;
+        background-color: white;
+        width: 250px;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: 0.15em solid rgb(221, 87, 109); /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: 0.15em; /* Adjust as needed */
+        animation: typing 3.5s steps(30, end),
+          blink-caret 0.5s step-end infinite;
+      }
+
+      /* The typing effect */
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 250px;
+        }
+      }
+
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: rgb(255, 138, 158);
+        }
+      }
+
+      @keyframes blink {
+        50% {
+          border: 2px solid rgb(167, 2, 29);
+        }
+      }
+      a:first-child {
+        /*or other element you want*/
+        animation: blink 0.5s step-end infinite alternate;
+      }
+
+      .div2 {
+        display: flex;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+      }
+      .div3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Barbie";
+        flex-direction: column;
+      }
+      .div3 a:first-child {
+        padding: 5px 20px;
+        background-color: rgb(252, 94, 121);
+        color: white;
+        border-radius: 5px;
+        font-size: larger;
+        cursor: url("yes.gif"), url("favicon.ico"), auto;
+        text-decoration: none;
+        border: 2px solid rgb(252, 94, 121);
+      }
+      .div3 a:last-child {
+        padding: 5px 20px;
+        background-color: rgb(255, 161, 177);
+        color: white;
+        border-radius: 5px;
+        font-size: larger;
+        cursor: url("favicon.ico"), auto;
+        text-decoration: none;
+      }
+      .div3 a:first-child:hover {
+        background-color: red;
+        transition: 2s;
+      }
+      .div3 a:last-child:hover {
+        background-color: green;
+        transition: 2s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <p>Will you be my Valentines?</p>
+    </div>
+    <div class="div2">
+      <img src="gif.gif" alt="gif" width="250px" />
+    </div>
+    <br />
+    <div class="div3">
+      <a href="Valentine2.html">Yes Absolutely!</a>
+      <br />
+      <label>or</label>
+      <br />
+      <a href="">Yes</a>
+    </div>
+  </body>
+</html>
